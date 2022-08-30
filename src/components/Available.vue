@@ -151,7 +151,7 @@
       </div>
     </div>
     <!-- </div> -->
-
+    <br />
     <!-- <div class="columns"> -->
     <div class="van">
       <div class="van-info">
@@ -339,6 +339,7 @@ button {
   width: 80%;
   margin-right: auto;
   margin-left: auto;
+  border-radius: 7px;
 }
 
 @media (max-width: 900px) {

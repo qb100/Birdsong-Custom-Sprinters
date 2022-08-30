@@ -13,7 +13,7 @@ export default {
 <style scoped>
 * {
   background-color: hsl(34, 44%, 69%);
-  color: black;
+  color: hsl(34, 20%, 50%);
   padding-top: 2rem;
   display: flex;
   align-items: center;
