@@ -108,7 +108,6 @@
           :loop="true"
           :spaceBetween="10"
           :navigation="true"
-          :thumbs="{ swiper: thumbsSwiper }"
           :modules="modules"
           class="mySwiper2"
           @swiper="onSwiper"
@@ -235,7 +234,6 @@
           :loop="true"
           :spaceBetween="10"
           :navigation="true"
-          :thumbs="{ swiper: thumbsSwiper }"
           :modules="modules"
           class="mySwiper2"
           @swiper="onSwiper"
@@ -286,7 +284,7 @@ export default {
   },
   setup() {
     return {
-      modules: [FreeMode, Navigation, Thumbs],
+      modules: [FreeMode, Navigation],
     };
   },
 };

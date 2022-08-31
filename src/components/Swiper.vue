@@ -1,5 +1,9 @@
 <template>
   <swiper
+    :style="{
+      '--swiper-navigation-color': '#fff',
+      '--swiper-pagination-color': '#fff',
+    }"
     :rewind="true"
     :navigation="true"
     :modules="modules"
@@ -78,13 +82,13 @@ body {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  /* -webkit-box-pack: center;
+  -webkit-box-pack: center;
   -ms-flex-pack: center;
-  -webkit-justify-content: center; */
+  -webkit-justify-content: center;
   justify-content: center;
-  /* -webkit-box-align: center;
+  -webkit-box-align: center;
   -ms-flex-align: center;
-  -webkit-align-items: center; */
+  -webkit-align-items: center;
   align-items: center;
   max-width: 100%;
   height: auto;
