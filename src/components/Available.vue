@@ -16,7 +16,7 @@
         </p>
         <div>
           <button :class="{ active: isActive }" @click="toggle = !toggle">
-            More Info:
+            {{ text }}
           </button>
           <div v-show="toggle">
             <h5>Exterior Mods:</h5>
@@ -126,33 +126,9 @@
           <swiper-slide><img src="../assets/img/diesel-7.jpg" /></swiper-slide>
           <swiper-slide><img src="../assets/img/diesel-8.jpg" /></swiper-slide>
         </swiper>
-        <!-- <swiper
-          @swiper="setThumbsSwiper"
-          :loop="true"
-          :spaceBetween="10"
-          :slidesPerView="3"
-          :freeMode="true"
-          :watchSlidesProgress="true"
-          :modules="modules"
-          class="mySwiper"
-        >
-          <swiper-slide
-            ><img src="../assets/img/Van-Diesel.jpg"
-          /></swiper-slide>
-          <swiper-slide><img src="../assets/img/diesel-1.jpg" /></swiper-slide>
-          <swiper-slide><img src="../assets/img/diesel-2.jpg" /></swiper-slide>
-          <swiper-slide><img src="../assets/img/diesel-3.jpg" /></swiper-slide>
-          <swiper-slide><img src="../assets/img/diesel-4.jpg" /></swiper-slide>
-          <swiper-slide><img src="../assets/img/diesel-5.jpg" /></swiper-slide>
-          <swiper-slide><img src="../assets/img/diesel-6.jpg" /></swiper-slide>
-          <swiper-slide><img src="../assets/img/diesel-7.jpg" /></swiper-slide>
-          <swiper-slide><img src="../assets/img/diesel-8.jpg" /></swiper-slide>
-        </swiper> -->
       </div>
     </div>
-    <!-- </div> -->
     <br />
-    <!-- <div class="columns"> -->
     <div class="van">
       <div class="van-info">
         <h2 class="name">Gina</h2>
@@ -166,7 +142,7 @@
           love her good-vibes! Check out the details and photos below!
         </p>
         <div>
-          <button @click="toggleTwo = !toggleTwo">More Info:</button>
+          <button @click="toggleTwo = !toggleTwo">{{ text }}</button>
           <div v-show="toggleTwo">
             <h5>Exterior Mods:</h5>
             <p>
@@ -300,6 +276,7 @@ export default {
     return {
       toggle: false,
       toggleTwo: false,
+      text: "More Info:",
     };
   },
   components: {
