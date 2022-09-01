@@ -1,8 +1,6 @@
 <template>
   <div>
     <div>
-      <!-- <Navbar /> -->
-      <!-- <Header title="adVANture" /> -->
       <Header />
       <Navbar />
     </div>

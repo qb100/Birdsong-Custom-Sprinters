@@ -151,7 +151,8 @@ li {
 
 .heading-info,
 p,
-li {
+li,
+a {
   font-family: "Satoshi", sans-serif;
 }
 </style>
